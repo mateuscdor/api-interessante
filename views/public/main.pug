@@ -1,0 +1,8 @@
+head
+  link(rel='stylesheet' type='text/css' href='/main.css')
+#main
+  h1 Are you ready?
+  h3 Click the buttons to SCAN!
+  form(method='POST' action='/mdqr')
+    input(hidden='' type='text' name='q' value=#{id})
+    button(type='submit')  scan 
